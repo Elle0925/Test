@@ -1,6 +1,5 @@
 from playwright.sync_api import Page, expect
 
-
 def test_example(page: Page) -> None:
     page.goto("https://cn.bing.com/")
     page.get_by_role("searchbox", name="输入搜索词").click()
